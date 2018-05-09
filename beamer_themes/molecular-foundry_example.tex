@@ -1,0 +1,56 @@
+\documentclass[hyperref=hidelinks, aspectratio=169]{beamer}
+\mode<presentation>
+
+\usepackage{svg}
+\usepackage[version=4]{mhchem}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+\usepackage{pgf}
+\usepackage{tikz}
+\usepackage{tikzscale}
+	\usetikzlibrary{positioning}
+    \usetikzlibrary{arrows.meta}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{standalone}
+\usepackage{siunitx} 		%For making SI units
+\sisetup{
+  mathsmu = \text{µ},
+  textmu  = µ
+  }
+\usepackage{doi}			%For doi references
+\usepackage{soul}			%Strikethrough
+\usepackage[super]{nth}			%th and st on numbers
+\setbeamertemplate{caption}[numbered]
+\usetheme{molecular-foundry}
+
+% \usefonttheme{professionalfonts} % using non standard fonts for beamer
+% \usefonttheme{serif} % default family is serif
+% \usepackage{fontspec}
+% \setmainfont{Fira Sans Light} 
+
+\title{Title}
+\author{A. N. Author}
+\institute{Example University}
+\date{12/31/1970}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame} %Title Frame
+
+\begin{frame}{Frame Title}
+  \begin{center}
+    \emph{``This is an important quote''}\\
+  \end{center}
+  \begin{itemize}
+  \item Item 1
+  \item Item 2
+  \item Item 3
+  \end{itemize}
+  $$E = mc^2$$
+  
+\end{frame}
+
+\end{document}

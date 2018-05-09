@@ -1,0 +1,39 @@
+\mode<presentation>
+
+% Defining new title graphic
+\renewcommand\titlegraphic[1]{\def\inserttitlegraphic{\includegraphics[height=0.12\paperheight]{#1}}}
+\providecommand\inserttitlegraphicII{}
+\providecommand\titlegraphicII[1]{\def\inserttitlegraphicII{\includegraphics[height=0.12\paperheight]{#1}}}
+
+% TITLE PAGE
+\defbeamertemplate*{title page}{molecular-foundry}[1][]
+{
+  \begin{beamercolorbox}[ % Title
+    wd=0.9\paperwidth,
+    ht=0.45\paperheight,
+    sep=0.03\paperwidth,
+    left
+    #1]{title}
+    \usebeamerfont{title}\TitleFont{\inserttitle}\par%
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[ % Author
+    left,
+    wd=0.9\paperwidth,
+    sep=0.03\paperwidth,
+    #1]{authorinstitutiondate}
+    \usebeamerfont{author}\insertauthor\par
+    \insertinstitute\par
+    \insertdate\par
+  \end{beamercolorbox}
+  \begin{beamercolorbox}[ % Title Graphics
+    left,
+    wd=0.9\paperwidth,
+    ht=0.275\paperheight,
+    sep=0.03\paperwidth,
+    #1]{white}
+    \inserttitlegraphic
+    \hspace{0.02\paperwidth}
+    \inserttitlegraphicII
+  \end{beamercolorbox}
+  \vfill
+}%

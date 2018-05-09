@@ -1,0 +1,105 @@
+\mode<presentation>
+
+% FOOTER - ALL SLIDES
+% Get rid of the default navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Set the footer line height to match the logo. Based on the ratio
+% between bar height and logo width, relative to the \paperwidth.
+\newcommand{\footerheight}{0.00426\paperwidth}
+
+\defbeamertemplate*{footline}{MF Theme}
+{
+  \leavevmode%
+  \hbox{% Gray Box
+    \begin{beamercolorbox}[
+        wd=0.04\paperwidth,
+        ht=\footerheight,
+        ]{MFfootergray}
+	\end{beamercolorbox}
+    }
+    % \hspace{-0.014\paperwidth}
+  \hbox{% BayBlue Box
+    \begin{beamercolorbox}[
+        wd=0.186\paperwidth,
+        ht=\footerheight,
+        sep=0pt,
+      ]{MFfooterbayblue}
+	\end{beamercolorbox}
+    }
+    % \hspace{0.014\paperwidth}
+  \hbox{% Navy Box
+    \begin{beamercolorbox}[
+        wd=0.463\paperwidth,
+        ht=\footerheight,
+      ]{MFfooternavy}
+	\end{beamercolorbox}
+  }
+    \hspace{0.014\paperwidth}
+  % \hspace{0.038\paperwidth}
+  \hbox{% Logo
+    \begin{tikzpicture}
+      \node[anchor=south west, inner sep=0, outer sep=0] at (current page.south) {
+        \includegraphics[width=0.213\paperwidth]{logo_pack/MF_logos/1_Signature_Preferred_2c/1_Signature_Preferred_2c.pdf}
+      };
+    \end{tikzpicture}
+    }
+    % \hspace{0.044\paperwidth}
+  \hbox{% White space
+    \begin{beamercolorbox}[
+        wd=0.014\paperwidth,
+        ht=\footerheight,
+      ]{white}
+	\end{beamercolorbox}
+  }
+  \hbox{% frame number box
+    \begin{beamercolorbox}[
+      center,
+      wd=0.04\paperwidth,
+      ht=0.04\paperheight,
+      sep=1.2ex
+      ]{MFfooter}
+      \textbf{\insertframenumber}
+	\end{beamercolorbox}
+  }
+  \hbox{% rest of space
+    \begin{beamercolorbox}[
+      right,
+      wd=0.96\paperwidth,
+      ht=0.04\paperheight,
+      sep=1.2ex
+      ]{MFfooter}
+    \end{beamercolorbox}
+  }
+
+}%
+\vskip0pt%
+
+% FRAME TITLE
+
+\defbeamertemplate*{frametitle}{MF theme}[1][left]{
+  \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
+  \@tempdima=\textwidth%
+  \advance\@tempdima by\beamer@leftmargin%
+  \advance\@tempdima by\beamer@rightmargin%
+  \begin{beamercolorbox}[left,sep=0.3cm,#1,wd=\the\@tempdima]{frametitle}
+  %% \pgfsetfillopacity{0}
+    \usebeamerfont{frametitle}%
+    \vbox{}\vskip-1ex%
+    \if@tempswa\else\csname beamer@fte#1\endcsname\fi%
+    \strut\TitleFont{\insertframetitle}\strut\par%
+        {%
+          \ifx\insertframesubtitle\@empty%
+          \else%
+              {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\strut\par}%
+              \fi
+        }%
+        \vskip-1ex%
+        \if@tempswa\else\vskip-.3cm\fi% set inside beamercolorbox... evil here...
+  \end{beamercolorbox}%
+  \vspace{-0.6cm}
+  \begin{beamercolorbox}[wd=0.75\paperwidth,ht=0.065cm]{frametitle underline}
+    
+  \end{beamercolorbox}
+  \vspace{-0.05\paperheight}
+}

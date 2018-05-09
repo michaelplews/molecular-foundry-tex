@@ -1,0 +1,42 @@
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontspec}
+\usetikzlibrary{arrows,shapes}
+\tikzset{
+  every overlay node/.style={
+    anchor=north west,
+  },
+}
+% Usage:
+% \tikzoverlay at (-1cm,-5cm) {content};
+% or
+% \tikzoverlay[text width=5cm] at (-1cm,-5cm) {content};
+\def\tikzoverlay{%
+   \tikz[baseline, remember picture,overlay]\node[every overlay node]
+}%
+
+\mode<presentation>
+
+\useinnertheme{molecular-foundry}
+\useoutertheme{molecular-foundry}
+\usecolortheme{molecular-foundry}
+\usefonttheme{molecular-foundry}
+
+% \newcommand\wide[2][3em]{%
+%     \makebox[\linewidth][c]{%
+%     \begin{minipage}{\dimexpr\textwidth+#1\relax}
+%     \raggedright#2
+%     \end{minipage}%
+%     }%
+% }
+
+
+% % \usebackgroundtemplate%
+%     % {%
+%       % \includegraphics[width=\paperwidth,height=\paperheight]{blocks.png}%
+%     % }
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+\mode
+<all>
