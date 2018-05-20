@@ -59,7 +59,10 @@
       ht=0.04\paperheight,
       sep=1.2ex
       ]{MFfooter}
-      \textbf{\insertframenumber}
+      \if@doFrameNumbering
+      \textbf{\insertframenumber/\inserttotalframenumber}
+      \else
+      \fi
 	\end{beamercolorbox}
   }
   \hbox{% rest of space

@@ -17,24 +17,18 @@
 
 \mode<presentation>
 
+% Options
+\newif\if@doFrameNumbering
+\@doFrameNumberingfalse
+
+\DeclareOption{framenumbering}{\@doFrameNumberingtrue}
+\ProcessOptions
+
+% Themes
 \useinnertheme{molecular-foundry}
 \useoutertheme{molecular-foundry}
 \usecolortheme{molecular-foundry}
 \usefonttheme{molecular-foundry}
-
-% \newcommand\wide[2][3em]{%
-%     \makebox[\linewidth][c]{%
-%     \begin{minipage}{\dimexpr\textwidth+#1\relax}
-%     \raggedright#2
-%     \end{minipage}%
-%     }%
-% }
-
-
-% % \usebackgroundtemplate%
-%     % {%
-%       % \includegraphics[width=\paperwidth,height=\paperheight]{blocks.png}%
-%     % }
 
 \setbeamersize{text margin left=1em,text margin right=1em}
 
