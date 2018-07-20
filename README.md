@@ -21,6 +21,16 @@ Logos are provided in `logo_pack`, and were originally sourced from:
 ```
 ![molecular-foundry](./examples/molecular-foundry.png)
 
+### Options
+ - `framenumbering` adds the current and total slide numbers in the bottom left corner
+
+## Installation
+Clone this repo to your `~/texmf` directory
+
+```tex
+git clone git@github.com:michaelplews/molecular-foundry-tex.git ~/texmf/tex/
+```
+
 ## Requirements
 
 ### Fonts
