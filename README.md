@@ -6,7 +6,9 @@ Foundry. The
 [brand guidelines](http://foundry.lbl.gov/assets/docs/media/Molecular_Foundry_Brand_Guidelines-2015.pdf) and
 [presentation templates](http://foundry.lbl.gov/media/) were used to
 obtain as close a resemblance as possible to the official templates
-The Molecular Foundry provides.
+The Molecular Foundry provides. Any differences are documented below:
+
+- FiraSans-Regular is used as the main text font instead of FiraSans-Light due to visibility issues on a projector.
 
 Logos are provided in `logo_pack`, and were originally sourced from:
  - ![Molecular Foundry Media Services](http://foundry.lbl.gov/assets/docs/media/All_Logos.zip)
