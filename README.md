@@ -9,6 +9,7 @@ obtain as close a resemblance as possible to the official templates
 The Molecular Foundry provides. Any differences are documented below:
 
 - FiraSans-Regular is used as the main text font instead of FiraSans-Light due to visibility issues on a projector.
+- Page numbers appear navy blue due to visibility issues on a projector.
 
 Logos are provided in `logo_pack`, and were originally sourced from:
  - ![Molecular Foundry Media Services](http://foundry.lbl.gov/assets/docs/media/All_Logos.zip)
